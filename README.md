@@ -1,10 +1,14 @@
 # Aws-EC2-Wordpress-website
+#Over view:
 
-**Launch an Ec2 Instance **
+The construction of the website begins with the renting of a virtual computer **(EC2)** on the AWS platform. On this virtual computer, a software known as a web server is installed. A web server is essentially a software that handles HTTP requests and serves the appropriate HTTP responses. When a website is accessed from a browser, an HTTP request is sent by the browser to the server of that website. On the server, there is a web server software running that takes the HTTP request, processes it, and responds back with the appropriate response. In this project, a web server named Apache is utilized. First, a virtual computer**(EC2 Instance, Ubuntu)** is launched followed by the installation of Apache. Additionally, a database is needed, so a DBMS is installed on our instance, which happens to be MySQL, a very popular relational database management system. Once the installation of MySQL is completed, WordPress is installed. WordPress is a highly popular content management system written in PHP. It can be installed on the web server to create a website, which can then be customized. With the completion of the installation process and few configuration setups, the website is successfully set up.
 
+**Launch an EC2 Instance**
 
-
-
+1. click on AWS EC2 and this will take 
+to the ec2 dashboard over here i'll go
+2:55
+ahead and click on launch instance
 **STEP:1** : Install Apache server on Ubuntu:
 
 _**sudo apt install apache2**_
