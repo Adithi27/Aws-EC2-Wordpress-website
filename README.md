@@ -1,5 +1,10 @@
 # Aws-EC2-Wordpress-website
 
+**Launch an Ec2 Instance **
+
+
+
+
 **STEP:1** : Install Apache server on Ubuntu:
 
 _**sudo apt install apache2**_
