@@ -1,7 +1,8 @@
 # Aws-EC2-Wordpress-website
 
 **STEP:1** : Install Apache server on Ubuntu:
-**sudo apt install apache2**
+
+_**sudo apt install apache2**_
 This command uses the apt package manager to install the Apache HTTP server (apache2) on your Ubuntu system. Apache is one of the most widely used web servers, powering a large portion of websites on the internet.
 
 **STEP:2** : Install PHP runtime and PHP MySQL connector:
