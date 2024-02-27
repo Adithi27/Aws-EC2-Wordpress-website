@@ -9,6 +9,7 @@ The construction of the website begins with the renting of a virtual computer **
 to the ec2 dashboard over here i'll go
 2:55
 ahead and click on launch instance
+
 **STEP:1** : Install Apache server on Ubuntu:
 
 _**sudo apt install apache2**_
