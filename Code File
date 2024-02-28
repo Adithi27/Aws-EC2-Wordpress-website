@@ -1,0 +1,57 @@
+*STEP:1** : Install Apache server on Ubuntu:
+
+_**sudo apt install apache2**_
+
+**STEP:2** : Install PHP runtime and PHP MySQL connector:
+
+_**sudo apt install php libapache2-mod-php php-mysql**_
+
+**STEP:3** : Install MySQL server:
+
+_**sudo apt install mysql-server**_
+
+**STEP:4** : Login to MySQL server:
+
+_**sudo mysql -u root**_
+
+**STEP:4** : Change authentication plugin to mysql_native_password (change the password to something strong):
+
+_**ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'Testpassword@123';**_
+
+**STEP:5** : Create a new database user for WordPress (change the password to something strong):
+
+_**CREATE USER 'wp_user'@localhost IDENTIFIED BY 'Testpassword@123';**_
+
+**STEP:6** : Create a database for WordPress:
+
+_**CREATE DATABASE wp;**_
+
+**STEP:7** : Grant all privileges on the database 'wp' to the newly created user:
+
+_**GRANT ALL PRIVILEGES ON wp.* TO 'wp_user'@localhost;**_
+
+**STEP:8** : Download WordPress:
+
+_**cd /tmp
+wget https://wordpress.org/latest.tar.gz**_
+
+**STEP:9** : Unzip:
+
+_**tar -xvf latest.tar.gz**_
+
+**STEP:10** : Move WordPress folder to Apache document root:
+
+_**sudo mv wordpress/ /var/www/html**_
+
+**STEP:11** : Go to your website and set the details of the database and run the installation of WordPress. This step involves accessing your website through a web browser and following the WordPress installation wizard. During the installation process, you'll need to provide the database details (database name, username, password) created earlier.
+
+**STEP:12** : Edit the Apache configuration file to make the root directory of your website directly serve your WordPress website:
+
+_**cd /etc/apache2/sites-available/
+nano [config file]**_
+
+**STEP:13** : Command to restart/reload Apache server:
+
+_**sudo systemctl restart apache2**
+OR
+**sudo systemctl reload apache2**_
