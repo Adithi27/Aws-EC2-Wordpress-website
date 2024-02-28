@@ -1,14 +1,23 @@
 # Aws-EC2-Wordpress-website
-#Over view:
+
+# Over view:
 
 The construction of the website begins with the renting of a virtual computer **(EC2)** on the AWS platform. On this virtual computer, a software known as a web server is installed. A web server is essentially a software that handles HTTP requests and serves the appropriate HTTP responses. When a website is accessed from a browser, an HTTP request is sent by the browser to the server of that website. On the server, there is a web server software running that takes the HTTP request, processes it, and responds back with the appropriate response. In this project, a web server named Apache is utilized. First, a virtual computer **(EC2 Instance, Ubuntu)** is launched followed by the installation of Apache. Additionally, a database is needed, so a DBMS is installed on our instance, which happens to be MySQL, a very popular relational database management system. Once the installation of MySQL is completed, WordPress is installed. WordPress is a highly popular content management system written in PHP. It can be installed on the web server to create a website, which can then be customized. With the completion of the installation process and few configuration setups, the website is successfully set up.
 
 **Launch an EC2 Instance**
 
-1. click on AWS EC2 and this will take 
-to the ec2 dashboard over here i'll go
-2:55
-ahead and click on launch instance
+1. Click on AWS EC2 and this will take to the ec2 dashboard ahead and click on launch instance.
+2. Choose the OS within the listed options.
+3. click on create new keypair and create a key pair with a custom name. Choose the keypair type to be RSA.
+4. The file format is dot pem and when clicked on create Keypair that's going to download the private key.
+5. Configure your network settings and launch your instance.
+6. Go to EC2 dashboard and click on Elastic IP Address and allocate elastic ip address and
+7. Now assign it to the created virtual computer(EC2)
+8. For SSH Client Mobaxterm is used. Start a new SSH session with the Public Ipv4 address of your EC2 instance and Username.
+9. Go to advanced SSH settings and use the private key to log in attaching the private key that is downloaded.
+10. Now connection is established with the virtual computer.
+
+Execute the following code.    
 
 **STEP:1** : Install Apache server on Ubuntu:
 
